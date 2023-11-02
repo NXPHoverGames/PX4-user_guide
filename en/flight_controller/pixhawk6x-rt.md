@@ -1,9 +1,11 @@
 # Holybro Pixhawk 6X-RT
 
-:::warning
-PX4 does not manufacture this (or any) autopilot.
-Contact the [manufacturer](https://holybro.com/) for hardware support or compliance issues.
-:::
+> **WARNING**
+> PX4 does not manufacture this (or any) autopilot.
+> Contact the [manufacturer](https://holybro.com/) for hardware support or compliance issues.
+
+> **WARNING**
+> As of now PX4 SW enablement is done in px4 branch **pr-px4_fmu-v6xrt** only. Merge to PX4 main is expected soon. Related [PR 22263](https://github.com/PX4/PX4-Autopilot/pull/22263)
 
 _Pixhawk 6X-RT_<sup>&reg;</sup> is the latest update to the successful family of Pixhawk® flight controllers designed and made in collaboration with Holybro<sup>&reg;</sup>, NXP's mobile robotics team and the PX4 team based on NXP's open source reference design.
 
@@ -190,19 +192,16 @@ Analog battery monitoring via an ADC is not supported on this particular board, 
 
 ## Building Firmware
 
-:::tip
-Most users will not need to build this firmware!
-It is pre-built and automatically installed by _QGroundControl_ when appropriate hardware is connected.
-:::
+> **TIP**
+> Most users will not need to build this firmware!
+> It is pre-built and automatically installed by _QGroundControl_ when appropriate hardware is connected.
 
 To [build PX4](../dev_setup/building_px4.md) for this target:
 
 ```
-make nxp_fmurt1170-v1_default
+make px4_fmu-v6xrt_default
 ```
-:::warning
-As of now PX4 SW enablement is done in px4 branch pr-imxrt1170-imxrt1062 only. Merge to PX4 main is expected soon.
-:::
+
 <a id="debug_port"></a>
 
 ## Debug Port
